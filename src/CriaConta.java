@@ -2,7 +2,7 @@ public class CriaConta {
     public static void main(String[] args) {
         Conta primeiraConta = new Conta(3000,1375,13,1532750, "Wellington Luís Moreno Bigas");
 
-                primeiraConta.saca(300);
+
 
         System.out.println("------------------DADOS DO CONTA 1-------------------");
 
@@ -11,6 +11,12 @@ public class CriaConta {
                 System.out.println("Operação da Conta: " + primeiraConta.operacao);
                 System.out.println("Número da Conta: " + primeiraConta.conta );
                 System.out.println("Titular: " + primeiraConta.getTitular() + "\n");
+
+        System.out.println("------------TRANSAÇÕES DA CONTA 1------------");
+
+            primeiraConta.saca(300);
+            System.out.println("Saldo após saque: " + primeiraConta.getSaldo());
+
 
         Cliente cliente1 = new Cliente("Wellington", "083.938.179-43", "Em processo de se tornar um Dev");
 
